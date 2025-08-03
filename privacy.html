@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arya | donate</title>
+    <link rel="stylesheet" href="privacy.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=currency_rupee" />
+</head>
+<body>
+    <div class="con">
+        <div class="r">
+            <p> connect with mail & donate</p>
+            <form id="contactForm">
+            <div class="dash">
+                <div class="p11">
+                    <input name="name" placeholder="name" type="name" id="name" autofocus required> 
+                </div>
+                <div class="p22">
+                    <input name="Email" placeholder="Email" type="email" id="email"  autofocus required>
+                </div>
+                <a><button type="submit">connect</button></a>
+            </div>
+            </form>
+        </div>
+        <a><span class="material-symbols-outlined">currency_rupee</span>88</a>
+        <div class="don"><a href="donate.html"><button type="submit">donate</button></a></div>
+        <a><i class="fi fi-bs-indian-rupee-sign"></i></a>
+        <div class="write">
+            support and fund to a<b> arya&reg;</b>
+        </div>
+        <div class="o">
+            <ion-icon name="wallet-outline" class="open"></ion-icon>
+        </div>
+    </div>
+    <script>document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      if (name && email) {
+        alert("Thank you, Your message has been received.");
+      } else {
+        alert("Please fill out all fields before submitting.");
+      }
+    });
+    </script>
+</body>
+  
+</html>
